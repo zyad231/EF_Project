@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EF_Project
 {
-    [Table("Transfers")]
+    [Table("Transfer")]
     internal class Transfer
     {
         [Key]
@@ -31,6 +31,8 @@ namespace EF_Project
         public virtual Warehouse WarehouseFrom { get; set; }
         public virtual Warehouse WarehouseTo { get; set; }
         public virtual Supplier Supplier { get; set; }
+
+        public virtual ICollection<Transfer_Items> Transfer_Items { get; set; }
 
     }
 }

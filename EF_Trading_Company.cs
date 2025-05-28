@@ -27,6 +27,10 @@ namespace EF_Project
 
         public DbSet<Selling_Items> SellingItems { get; set; }
 
+        public DbSet<Transfer> Transfer { get; set; }
+
+        public DbSet<Transfer_Items> TransferItems { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -52,6 +56,10 @@ namespace EF_Project
                 .HasOne(si => si.SellingOrder)
                 .WithMany(SO => SO.Selling_Items)
                 .HasForeignKey(si => si.SellingOrderID);
+            modelBuilder.Entity<Transfer_Items>()
+                .HasOne(ti => ti.Transfer)
+                .WithMany(TO => TO.Transfer_Items)
+                .HasForeignKey(ti => ti.TransferID);
 
             base.OnModelCreating(modelBuilder);
         }
