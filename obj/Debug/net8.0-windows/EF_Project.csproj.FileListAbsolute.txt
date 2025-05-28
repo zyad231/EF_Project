@@ -140,3 +140,4 @@ C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\refint\EF_Projec
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.pdb
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.genruntimeconfig.cache
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\ref\EF_Project.dll
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.sourcelink.json

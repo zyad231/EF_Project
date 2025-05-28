@@ -14,7 +14,8 @@ namespace EF_Project
         [ForeignKey("DeliveryOrder")]
         public int DeliveryOrderID { get; set; }
 
-        [ForeignKey("Item")]
+
+        public int WarehouseID { get; set; }
         public int ItemID { get; set; }
 
         public int Quantity { get; set; }

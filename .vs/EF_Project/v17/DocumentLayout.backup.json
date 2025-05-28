@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\zyada\\source\\repos\\EF_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\ef_trading_company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:ef_trading_company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\transfer_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:transfer_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\selling_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:selling_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\item_units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:item_units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\deliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:deliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\delivery_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:delivery_items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\sellingorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,19 +31,27 @@
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\ef_trading_company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:ef_trading_company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\item_units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:item_units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\deliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:deliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -58,76 +62,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Delivery_Items.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Delivery_Items.cs",
+              "RelativeDocumentMoniker": "Delivery_Items.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Delivery_Items.cs",
+              "RelativeToolTip": "Delivery_Items.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:19:37.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transfer_Items.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Transfer_Items.cs",
+              "RelativeDocumentMoniker": "Transfer_Items.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Transfer_Items.cs*",
+              "RelativeToolTip": "Transfer_Items.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:34:47.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Transfer.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Transfer.cs",
               "RelativeDocumentMoniker": "Transfer.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Transfer.cs",
               "RelativeToolTip": "Transfer.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAB4AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T21:06:43.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Selling_Items.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Selling_Items.cs",
-              "RelativeDocumentMoniker": "Selling_Items.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Selling_Items.cs",
-              "RelativeToolTip": "Selling_Items.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T20:47:41.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "SellingOrder.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\SellingOrder.cs",
               "RelativeDocumentMoniker": "SellingOrder.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\SellingOrder.cs",
               "RelativeToolTip": "SellingOrder.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T20:41:23.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeliveryOrder.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\DeliveryOrder.cs",
-              "RelativeDocumentMoniker": "DeliveryOrder.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\DeliveryOrder.cs",
-              "RelativeToolTip": "DeliveryOrder.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:06:57.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Item_Units.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item_Units.cs",
-              "RelativeDocumentMoniker": "Item_Units.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item_Units.cs",
-              "RelativeToolTip": "Item_Units.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:51:39.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Supplier.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Supplier.cs",
               "RelativeDocumentMoniker": "Supplier.cs",
@@ -140,7 +131,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Warehouse.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Warehouse.cs",
+              "RelativeDocumentMoniker": "Warehouse.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Warehouse.cs",
+              "RelativeToolTip": "Warehouse.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAjwB8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:16:09.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EF_Trading_Company.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\EF_Trading_Company.cs",
+              "RelativeDocumentMoniker": "EF_Trading_Company.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\EF_Trading_Company.cs*",
+              "RelativeToolTip": "EF_Trading_Company.cs*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:09:03.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Selling_Items.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Selling_Items.cs",
+              "RelativeDocumentMoniker": "Selling_Items.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Selling_Items.cs*",
+              "RelativeToolTip": "Selling_Items.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T20:47:41.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Item_Units.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item_Units.cs",
+              "RelativeDocumentMoniker": "Item_Units.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item_Units.cs",
+              "RelativeToolTip": "Item_Units.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:51:39.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Client.cs",
               "RelativeDocumentMoniker": "Client.cs",
@@ -148,51 +191,23 @@
               "RelativeToolTip": "Client.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:05:40.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Warehouse.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Warehouse.cs",
-              "RelativeDocumentMoniker": "Warehouse.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Warehouse.cs",
-              "RelativeToolTip": "Warehouse.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB8AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T17:16:09.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EF_Trading_Company.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\EF_Trading_Company.cs",
-              "RelativeDocumentMoniker": "EF_Trading_Company.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\EF_Trading_Company.cs",
-              "RelativeToolTip": "EF_Trading_Company.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA7wDUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T17:09:03.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item.cs",
-              "RelativeDocumentMoniker": "Item.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Item.cs",
-              "RelativeToolTip": "Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T17:21:24.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T18:05:40.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "DeliveryOrder.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\DeliveryOrder.cs",
+              "RelativeDocumentMoniker": "DeliveryOrder.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\DeliveryOrder.cs",
+              "RelativeToolTip": "DeliveryOrder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:06:57.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -205,15 +220,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T17:05:54.081Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-27T17:05:54.081Z"
             }
           ]
         }

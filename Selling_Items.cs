@@ -12,7 +12,7 @@ namespace EF_Project
     {
         [ForeignKey("SellingOrder")]
         public int SellingOrderID { get; set; }
-        [ForeignKey("Item")]
+        public int WarehouseID { get; set; }
         public int ItemID { get; set; }
         public int Quantity { get; set; }
         // Navigation properties to represent the relationships

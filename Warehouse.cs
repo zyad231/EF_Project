@@ -29,6 +29,6 @@ namespace EF_Project
 
         public virtual ICollection<SellingOrder> SellingOrders { get; set; }
 
-        public virtual ICollection<TransferOrder> TransferOrders { get; set; }
+        public virtual ICollection<Transfer> Transfer { get; set; }
     }
 }

@@ -48,18 +48,52 @@ namespace EF_Project
                 .HasOne(i => i.Item_Units)
                 .WithMany(u => u.Items)
                 .HasForeignKey(i => i.Item_UnitsID);
+
+            modelBuilder.Entity<Delivery_Items>()
+                .HasKey(di => new { di.DeliveryOrderID, di.ItemID });
+
             modelBuilder.Entity<Delivery_Items>()
                 .HasOne(di => di.DeliveryOrder)
                 .WithMany(DO => DO.Delivery_Items)
                 .HasForeignKey(di => di.DeliveryOrderID);
+
+            modelBuilder.Entity<Delivery_Items>()
+                .HasOne(di => di.Item)
+                .WithMany()
+                .HasForeignKey(di => new { di.WarehouseID, di.ItemID });
+
+            modelBuilder.Entity<Selling_Items>()
+                .HasKey(si => new { si.SellingOrderID, si.ItemID });
             modelBuilder.Entity<Selling_Items>()
                 .HasOne(si => si.SellingOrder)
                 .WithMany(SO => SO.Selling_Items)
                 .HasForeignKey(si => si.SellingOrderID);
+            modelBuilder.Entity<Selling_Items>()
+                .HasOne(si => si.Item)
+                .WithMany()
+                .HasForeignKey(si => new { si.WarehouseID, si.ItemID });
+
+            modelBuilder.Entity<Transfer_Items>()
+                .HasKey(ti => new { ti.TransferID, ti.ItemID });
             modelBuilder.Entity<Transfer_Items>()
                 .HasOne(ti => ti.Transfer)
-                .WithMany(TO => TO.Transfer_Items)
+                .WithMany(t => t.Transfer_Items)
                 .HasForeignKey(ti => ti.TransferID);
+            modelBuilder.Entity<Transfer_Items>()
+                .HasOne(ti => ti.Item)
+                .WithMany()
+                .HasForeignKey(ti => new { ti.WarehouseID, ti.ItemID });
+            modelBuilder.Entity<Transfer>()
+                .HasOne(t => t.WarehouseFrom)
+                .WithMany()
+                .HasForeignKey(t => t.WarehouseFromID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transfer>()
+                .HasOne(t => t.WarehouseTo)
+                .WithMany()
+                .HasForeignKey(t => t.WarehouseToID)
+                .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
         }
