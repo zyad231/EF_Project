@@ -103,13 +103,13 @@ namespace EF_Project
 
             modelBuilder.Entity<Transfer>()
                 .HasOne(t => t.WarehouseFrom)
-                .WithMany()
+                .WithMany(w => w.FromTransfer)
                 .HasForeignKey(t => t.WarehouseFromID)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Transfer>()
                 .HasOne(t => t.WarehouseTo)
-                .WithMany()
+                .WithMany(w => w.ToTransfer)
                 .HasForeignKey(t => t.WarehouseToID)
                 .OnDelete(DeleteBehavior.Restrict);
 

@@ -14,8 +14,10 @@ namespace EF_Project
         [Key]
         public int ID { get; set; }
 
+        [ForeignKey(nameof(WarehouseFromID))]
         public int WarehouseFromID { get; set; }
 
+        [ForeignKey(nameof(WarehouseToID))]
         public int WarehouseToID { get; set; }
 
         [ForeignKey("Supplier")]

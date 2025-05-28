@@ -4,6 +4,7 @@ using EF_Project;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_Project.Migrations
 {
     [DbContext(typeof(EF_Trading_Company))]
-    partial class EF_Trading_CompanyModelSnapshot : ModelSnapshot
+    [Migration("20250528135142_FixTransferForeignKeys")]
+    partial class FixTransferForeignKeys
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -260,6 +263,9 @@ namespace EF_Project.Migrations
                     b.Property<int>("WarehouseFromID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("WarehouseID")
+                        .HasColumnType("int");
+
                     b.Property<int>("WarehouseToID")
                         .HasColumnType("int");
 
@@ -268,6 +274,8 @@ namespace EF_Project.Migrations
                     b.HasIndex("SupplierID");
 
                     b.HasIndex("WarehouseFromID");
+
+                    b.HasIndex("WarehouseID");
 
                     b.HasIndex("WarehouseToID");
 
@@ -442,13 +450,17 @@ namespace EF_Project.Migrations
                         .IsRequired();
 
                     b.HasOne("EF_Project.Warehouse", "WarehouseFrom")
-                        .WithMany("FromTransfer")
+                        .WithMany()
                         .HasForeignKey("WarehouseFromID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("EF_Project.Warehouse", null)
+                        .WithMany("Transfer")
+                        .HasForeignKey("WarehouseID");
+
                     b.HasOne("EF_Project.Warehouse", "WarehouseTo")
-                        .WithMany("ToTransfer")
+                        .WithMany()
                         .HasForeignKey("WarehouseToID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -517,13 +529,11 @@ namespace EF_Project.Migrations
                 {
                     b.Navigation("DeliveryOrders");
 
-                    b.Navigation("FromTransfer");
-
                     b.Navigation("Items");
 
                     b.Navigation("SellingOrders");
 
-                    b.Navigation("ToTransfer");
+                    b.Navigation("Transfer");
                 });
 #pragma warning restore 612, 618
         }
