@@ -21,11 +21,12 @@ namespace EF_Project
 
         }
 
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplayData(comboBox1.SelectedItem.ToString());
         }
-        private void DisplayData(string tableName) 
+        private void DisplayData(string tableName)
         {
             switch (tableName)
             {
@@ -33,12 +34,12 @@ namespace EF_Project
                     dataGridView1.DataSource = company.Items.Select(w => new
                     {
                         w.ID,
-                        w.Name,
-                        w.WarehouseID
+                        w.WarehouseID,
+                        w.Name
                     }).ToList();
                     break;
                 case "Warehouses":
-                    dataGridView1.DataSource = company.Warehouses.Select(w => new 
+                    dataGridView1.DataSource = company.Warehouses.Select(w => new
                     {
                         w.ID,
                         w.Name,
@@ -50,10 +51,26 @@ namespace EF_Project
                     dataGridView1.DataSource = company.ItemUnits.ToList();
                     break;
                 case "Suppliers":
-                    dataGridView1.DataSource = company.Suppliers.ToList();
+                    dataGridView1.DataSource = company.Suppliers.Select(w => new
+                    {
+                        w.ID,
+                        w.Name,
+                        w.Mobile,
+                        w.PhoneNumber,
+                        w.Website
+                    }
+                    ).ToList();
                     break;
                 case "Clients":
-                    dataGridView1.DataSource = company.Clients.ToList();
+                    dataGridView1.DataSource = company.Clients.Select(w => new
+                    {
+                        w.ID,
+                        w.Name,
+                        w.Mobile,
+                        w.PhoneNumber,
+                        w.Website
+                    }
+                    ).ToList();
                     break;
                 case "DeliveryOrders":
                     dataGridView1.DataSource = company.DeliveryOrders.ToList();
@@ -75,5 +92,26 @@ namespace EF_Project
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            switch(comboBox1.SelectedItem.ToString())
+            {
+                case ("Items"):
+                    using (var form = new AddItem())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                            
+                        }
+                        DisplayData("Items"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 0; // Reset ComboBox selection
+                    }
+
+                    break;
+            }
+        }
+
     }
+
 }

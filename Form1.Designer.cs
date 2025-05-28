@@ -30,32 +30,44 @@
         {
             dataGridView1 = new DataGridView();
             comboBox1 = new ComboBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(716, 31);
+            dataGridView1.Location = new Point(574, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(524, 472);
+            dataGridView1.Size = new Size(666, 491);
             dataGridView1.TabIndex = 0;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(229, 31);
+            comboBox1.Location = new Point(136, 31);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(244, 28);
             comboBox1.TabIndex = 1;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(177, 417);
+            button1.Name = "button1";
+            button1.Size = new Size(183, 29);
+            button1.TabIndex = 2;
+            button1.Text = "Add / Change";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 515);
+            Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(dataGridView1);
             Name = "Form1";
@@ -68,5 +80,6 @@
 
         private DataGridView dataGridView1;
         private ComboBox comboBox1;
+        private Button button1;
     }
 }
