@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_Project.Migrations
 {
     [DbContext(typeof(EF_Trading_Company))]
-    [Migration("20250528105027_CreateDB")]
+    [Migration("20250528111511_CreateDB")]
     partial class CreateDB
     {
         /// <inheritdoc />
@@ -361,7 +361,7 @@ namespace EF_Project.Migrations
                     b.HasOne("EF_Project.Item", "Item")
                         .WithMany()
                         .HasForeignKey("WarehouseID", "ItemID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("DeliveryOrder");
@@ -433,7 +433,7 @@ namespace EF_Project.Migrations
                     b.HasOne("EF_Project.Item", "Item")
                         .WithMany()
                         .HasForeignKey("WarehouseID", "ItemID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Item");
@@ -483,7 +483,7 @@ namespace EF_Project.Migrations
                     b.HasOne("EF_Project.Item", "Item")
                         .WithMany()
                         .HasForeignKey("WarehouseID", "ItemID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Item");

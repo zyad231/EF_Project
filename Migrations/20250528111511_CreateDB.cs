@@ -205,7 +205,7 @@ namespace EF_Project.Migrations
                         columns: x => new { x.WarehouseID, x.ItemID },
                         principalTable: "Item",
                         principalColumns: new[] { "WarehouseID", "ID" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -245,7 +245,7 @@ namespace EF_Project.Migrations
                         columns: x => new { x.WarehouseID, x.ItemID },
                         principalTable: "Item",
                         principalColumns: new[] { "WarehouseID", "ID" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_selling_items_Supplier_SupplierID",
                         column: x => x.SupplierID,
@@ -276,7 +276,7 @@ namespace EF_Project.Migrations
                         columns: x => new { x.WarehouseID, x.ItemID },
                         principalTable: "Item",
                         principalColumns: new[] { "WarehouseID", "ID" },
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_transfer_items_Transfer_TransferID",
                         column: x => x.TransferID,

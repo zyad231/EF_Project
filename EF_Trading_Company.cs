@@ -74,7 +74,8 @@ namespace EF_Project
             modelBuilder.Entity<Delivery_Items>()
                 .HasOne(di => di.Item)
                 .WithMany()
-                .HasForeignKey(di => new { di.WarehouseID, di.ItemID });
+                .HasForeignKey(di => new { di.WarehouseID, di.ItemID })
+                .OnDelete(DeleteBehavior.Restrict); ;
 
             modelBuilder.Entity<Selling_Items>()
                 .HasKey(si => new { si.SellingOrderID, si.ItemID ,si.WarehouseID});
@@ -85,7 +86,8 @@ namespace EF_Project
             modelBuilder.Entity<Selling_Items>()
                 .HasOne(si => si.Item)
                 .WithMany()
-                .HasForeignKey(si => new { si.WarehouseID, si.ItemID });
+                .HasForeignKey(si => new { si.WarehouseID, si.ItemID })
+                .OnDelete(DeleteBehavior.Restrict); ;
 
             modelBuilder.Entity<Transfer_Items>()
                 .HasKey(ti => new { ti.TransferID, ti.ItemID ,ti.WarehouseID});
@@ -96,7 +98,9 @@ namespace EF_Project
             modelBuilder.Entity<Transfer_Items>()
                 .HasOne(ti => ti.Item)
                 .WithMany()
-                .HasForeignKey(ti => new { ti.WarehouseID, ti.ItemID });
+                .HasForeignKey(ti => new { ti.WarehouseID, ti.ItemID })
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder.Entity<Transfer>()
                 .HasOne(t => t.WarehouseFrom)
                 .WithMany()
