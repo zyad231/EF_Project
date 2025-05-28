@@ -38,19 +38,33 @@ namespace EF_Project
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            // Warehouse primary key
+            modelBuilder.Entity<Warehouse>()
+                .HasKey(w => w.ID);
+
+            // Item composite primary key
             modelBuilder.Entity<Item>()
                 .HasKey(i => new { i.WarehouseID, i.ID });
+
+            // Item -> Warehouse relationship (many to one)
             modelBuilder.Entity<Item>()
                 .HasOne(i => i.Warehouse)
                 .WithMany(w => w.Items)
                 .HasForeignKey(i => i.WarehouseID);
-            modelBuilder.Entity<Item>()
-                .HasOne(i => i.Item_Units)
-                .WithMany(u => u.Items)
-                .HasForeignKey(i => i.Item_UnitsID);
+
+            // Item_Units composite primary key
+            modelBuilder.Entity<Item_Units>()
+                .HasKey(u => new { u.warehouseID, u.ItemID, u.Unit });
+
+            // Item_Units -> Item relationship (many to one)
+            modelBuilder.Entity<Item_Units>()
+                .HasOne(u => u.Item)
+                .WithMany(i => i.Item_Units)
+                .HasForeignKey(u => new { u.warehouseID, u.ItemID });
 
             modelBuilder.Entity<Delivery_Items>()
-                .HasKey(di => new { di.DeliveryOrderID, di.ItemID });
+                .HasKey(di => new { di.DeliveryOrderID, di.ItemID, di.WarehouseID ,});
 
             modelBuilder.Entity<Delivery_Items>()
                 .HasOne(di => di.DeliveryOrder)
@@ -63,7 +77,7 @@ namespace EF_Project
                 .HasForeignKey(di => new { di.WarehouseID, di.ItemID });
 
             modelBuilder.Entity<Selling_Items>()
-                .HasKey(si => new { si.SellingOrderID, si.ItemID });
+                .HasKey(si => new { si.SellingOrderID, si.ItemID ,si.WarehouseID});
             modelBuilder.Entity<Selling_Items>()
                 .HasOne(si => si.SellingOrder)
                 .WithMany(SO => SO.Selling_Items)
@@ -74,7 +88,7 @@ namespace EF_Project
                 .HasForeignKey(si => new { si.WarehouseID, si.ItemID });
 
             modelBuilder.Entity<Transfer_Items>()
-                .HasKey(ti => new { ti.TransferID, ti.ItemID });
+                .HasKey(ti => new { ti.TransferID, ti.ItemID ,ti.WarehouseID});
             modelBuilder.Entity<Transfer_Items>()
                 .HasOne(ti => ti.Transfer)
                 .WithMany(t => t.Transfer_Items)

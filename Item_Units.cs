@@ -11,13 +11,15 @@ namespace EF_Project
     [Table("Item_Units")]
     internal class Item_Units
     {
-        public int ID { get; set; }
+        public int ItemID { get; set; }
+
+        public int warehouseID { get; set; }
 
         [MaxLength(50)]
         public string Unit { get; set; }
 
         //Navigation property to represent the relationship with Item
-        public virtual ICollection<Item> Items { get; set; }
+        public virtual Item Item { get; set; }
 
     }
 }

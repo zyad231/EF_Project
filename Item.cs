@@ -19,12 +19,11 @@ namespace EF_Project
         [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
 
-        public int Item_UnitsID { get; set; } 
 
         // Navigation property to represent the relationship with Warehouse
         public virtual Warehouse Warehouse { get; set; }
 
         //Navigation property to represent the relationship with Item_Units
-        public virtual Item_Units Item_Units { get; set; }
+        public virtual ICollection<Item_Units> Item_Units { get; set; }
     }
 }
