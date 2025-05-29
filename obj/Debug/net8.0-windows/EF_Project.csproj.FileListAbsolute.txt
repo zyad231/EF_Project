@@ -145,3 +145,5 @@ C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddIt
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.Properties.Resources.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddWarehouses.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddClient.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddSupplier.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddDeliveryOrder.resources

@@ -34,11 +34,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            button1 = new Button();
             button2 = new Button();
-            label4 = new Label();
-            textBox4 = new TextBox();
-            button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             SuspendLayout();
@@ -92,20 +88,10 @@
             textBox3.Size = new Size(210, 27);
             textBox3.TabIndex = 7;
             // 
-            // button1
-            // 
-            button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(41, 365);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 9;
-            button1.Text = "Confirm";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             button2.DialogResult = DialogResult.Cancel;
-            button2.Location = new Point(518, 365);
+            button2.Location = new Point(293, 371);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 10;
@@ -113,35 +99,9 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(41, 247);
-            label4.Name = "label4";
-            label4.Size = new Size(70, 20);
-            label4.TabIndex = 3;
-            label4.Text = "Item Unit";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(194, 240);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(210, 27);
-            textBox4.TabIndex = 8;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(395, 365);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 11;
-            button3.Text = "Add Unit";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // button4
             // 
-            button4.Location = new Point(279, 365);
+            button4.Location = new Point(163, 371);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 12;
@@ -151,11 +111,12 @@
             // 
             // button5
             // 
-            button5.Location = new Point(157, 365);
+            button5.DialogResult = DialogResult.OK;
+            button5.Location = new Point(41, 371);
             button5.Name = "button5";
             button5.Size = new Size(94, 29);
             button5.TabIndex = 13;
-            button5.Text = "Add Item";
+            button5.Text = "Add";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
@@ -166,14 +127,10 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button5);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -191,11 +148,7 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private Button button1;
         private Button button2;
-        private Label label4;
-        private TextBox textBox4;
-        private Button button3;
         private Button button4;
         private Button button5;
     }

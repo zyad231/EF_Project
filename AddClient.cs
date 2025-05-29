@@ -16,7 +16,16 @@ namespace EF_Project
         {
             InitializeComponent();
         }
-        public int ClientID => int.Parse(textBox1.Text);
+        public int ClientID 
+        {
+            get
+            {
+                if (int.TryParse(textBox1.Text, out int id))
+                    return id;
+                MessageBox.Show("Please enter a valid Client ID.");
+                return -1; // Return an invalid ID if parsing fails
+            }
+        }
 
         public string ClientName => textBox2.Text;
 
@@ -30,6 +39,8 @@ namespace EF_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (ClientID == -1)
+                return; // Invalid ID check
             EF_Trading_Company company = new EF_Trading_Company();
             var client = new Client
             {
@@ -42,10 +53,13 @@ namespace EF_Project
             company.Clients.Add(client);
             company.SaveChanges();
             MessageBox.Show("Client added successfully.");
+            AddItem.ActiveForm.Close(); // Close the form after adding
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (ClientID == -1)
+                return; // Invalid ID check
             EF_Trading_Company company = new EF_Trading_Company();
             var found = company.Clients.FirstOrDefault(c => c.ID == ClientID);
             if (found == null)
@@ -62,6 +76,7 @@ namespace EF_Project
                 found.Mobile = ClientMobile;
                 company.SaveChanges();
                 MessageBox.Show("Client updated successfully.");
+                AddClient.ActiveForm.Close(); // Close the form after updating
             }
         }
     }

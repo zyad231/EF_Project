@@ -63,7 +63,8 @@ namespace EF_Project
                         w.Name,
                         w.Mobile,
                         w.PhoneNumber,
-                        w.Website
+                        w.Website,
+                        w.Email
                     }
                     ).ToList();
                     break;
@@ -74,12 +75,22 @@ namespace EF_Project
                         w.Name,
                         w.Mobile,
                         w.PhoneNumber,
-                        w.Website
+                        w.Website,
+                        w.Email
                     }
                     ).ToList();
                     break;
                 case "DeliveryOrders":
-                    dataGridView1.DataSource = company.DeliveryOrders.ToList();
+                    var query = from order in company.DeliveryOrders
+                                join supplier in company.Suppliers on order.SupplierID equals supplier.ID
+                                select new
+                                {
+                                    order.ID,
+                                    order.ExpDate,
+                                    order.ProdDate,
+                                    SupplierName = supplier.Name
+                                };
+                    dataGridView1.DataSource = query.ToList();
                     break;
                 case "DeliveryItems":
                     dataGridView1.DataSource = company.DeliveryItems.ToList();
@@ -136,6 +147,26 @@ namespace EF_Project
                         comboBox1.SelectedIndex = 4; // Reset ComboBox selection
                     }
                     break;
+                    case ("Suppliers"):
+                    using (var form = new AddSupplier())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                        }
+                        DisplayData("Suppliers"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 3; // Reset ComboBox selection
+                    }
+                    break;
+                    case ("DeliveryOrders"):
+                    using (var form = new AddDeliveryOrder())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                        }
+                        DisplayData("DeliveryOrders"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 5; // Reset ComboBox selection
+                    }
+                    break ;
             }
         }
 

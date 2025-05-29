@@ -16,7 +16,16 @@ namespace EF_Project
         {
             InitializeComponent();
         }
-        public int WarehouseID => int.Parse(textBox1.Text);
+        public int WarehouseID
+        {
+            get
+            {
+                if (int.TryParse(textBox1.Text, out int id))
+                    return id;
+                MessageBox.Show("Please enter a valid Warehouse ID.");
+                return -1; // Return an invalid ID if parsing fails
+            }
+        }
 
         public string WarehouseName => textBox2.Text;
 
@@ -41,6 +50,8 @@ namespace EF_Project
         private void button4_Click(object sender, EventArgs e)
         {
             EF_Trading_Company company = new EF_Trading_Company();
+            if (WarehouseID == -1) 
+                return; // Invalid ID check
             var found = company.Warehouses.FirstOrDefault(w => w.ID == WarehouseID);
             if (found == null)
             {
@@ -54,6 +65,7 @@ namespace EF_Project
                 found.Manager = WarehouseManager;
                 company.SaveChanges();
                 MessageBox.Show("Warehouse updated successfully.");
+                AddWarehouses.ActiveForm.Close(); // Close the form after updating
             }
 
         }
