@@ -143,3 +143,5 @@ C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\ref\EF_Project.d
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.sourcelink.json
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddItem.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.Properties.Resources.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddWarehouses.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddClient.resources

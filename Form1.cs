@@ -48,7 +48,13 @@ namespace EF_Project
                     }).ToList();
                     break;
                 case "ItemUnits":
-                    dataGridView1.DataSource = company.ItemUnits.ToList();
+                    dataGridView1.DataSource = company.ItemUnits.Select(w => new 
+                    {
+                        w.ItemID,
+                        w.warehouseID,
+                        w.Unit
+
+                    }).ToList();
                     break;
                 case "Suppliers":
                     dataGridView1.DataSource = company.Suppliers.Select(w => new
@@ -108,6 +114,27 @@ namespace EF_Project
                         comboBox1.SelectedIndex = 0; // Reset ComboBox selection
                     }
 
+                    break;
+                case ("Warehouses"):
+                    using (var form = new AddWarehouses())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+
+                        }
+                        DisplayData("Warehouses"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 1; // Reset ComboBox selection
+                    }
+                    break;
+                    case ("Clients"):
+                    using (var form = new AddClient())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                        }
+                        DisplayData("Clients"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 4; // Reset ComboBox selection
+                    }
                     break;
             }
         }
