@@ -21,10 +21,12 @@ namespace EF_Project
             var query = from Warehouse in company.Warehouses
                         select new
                         {
+                            Warehouse.ID,
                             Warehouse.Name
                         };
             checkedListBox1.DataSource = query.ToList();
             checkedListBox1.DisplayMember = "Name";
+            checkedListBox1.ValueMember = "ID";
         }
         public int RemainingDays
         {
@@ -110,8 +112,8 @@ namespace EF_Project
             var query = from Transfer in company.Transfer
                         join TI in company.TransferItems on Transfer.ID equals TI.TransferID
                         join item in company.Items on new { ItemID = TI.ItemID, WarehouseID = TI.WarehouseID } equals new { ItemID = item.ID, WarehouseID = item.WarehouseID }
-                        where selectedWarehouses.Contains(item.Warehouse.Name) && 
-                        Transfer.TransferDate <= dateTimePicker1.Value.ToUniversalTime() && 
+                        where selectedWarehouses.Contains(item.Warehouse.Name) &&
+                        Transfer.TransferDate <= dateTimePicker1.Value.ToUniversalTime() &&
                         Transfer.TransferDate >= dateTimePicker2.Value.ToUniversalTime()
                         select new
                         {
@@ -124,6 +126,48 @@ namespace EF_Project
                             item.WarehouseID
                         };
             dataGridView1.DataSource = query.ToList();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EF_Trading_Company company = new EF_Trading_Company();
+            var selectedWarehouses = checkedListBox1.CheckedItems.Cast<dynamic>().Select(warehouse => warehouse.ID).ToList();
+            if (selectedWarehouses.Count == 0)
+            {
+                MessageBox.Show("Please select at least one warehouse.");
+                return;
+            }
+            var query = from DO in company.DeliveryOrders
+                        join Supplier in company.Suppliers on DO.SupplierID equals Supplier.ID
+                        where selectedWarehouses.Contains(DO.WarehouseID) &&
+                        DO.DeliveryDate >= dateTimePicker1.Value &&
+                        DO.DeliveryDate <= dateTimePicker2.Value
+                        select new
+                        {
+                            DO.ID,
+                            DO.DeliveryDate,
+                            DO.ExpDate,
+                            DO.WarehouseID,
+                            Supplier.Name,
+                        };
+            dataGridView1.DataSource = query.ToList();
+            var query2 = from T in company.Transfer
+                    join Supplier in company.Suppliers on T.SupplierID equals Supplier.ID
+                    join Warehouse in company.Warehouses on T.WarehouseFromID equals Warehouse.ID
+                    where selectedWarehouses.Contains(T.WarehouseFromID) &&
+                    T.TransferDate >= dateTimePicker1.Value &&
+                    T.TransferDate <= dateTimePicker2.Value
+                    select new
+                    {
+                        T.ID,
+                        T.TransferDate,
+                        T.ExpDate,
+                        WarehouseName = Warehouse.Name,
+                        SupplierName = Supplier.Name
+                    };
+            dataGridView2.DataSource = query2.ToList();
+
+
         }
     }
 }

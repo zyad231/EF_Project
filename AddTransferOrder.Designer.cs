@@ -43,6 +43,8 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            dateTimePicker3 = new DateTimePicker();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(44, 106);
+            label2.Location = new Point(44, 95);
             label2.Name = "label2";
             label2.Size = new Size(150, 20);
             label2.TabIndex = 1;
@@ -66,7 +68,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(44, 166);
+            label3.Location = new Point(44, 147);
             label3.Name = "label3";
             label3.Size = new Size(181, 20);
             label3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(44, 229);
+            label4.Location = new Point(44, 201);
             label4.Name = "label4";
             label4.Size = new Size(83, 20);
             label4.TabIndex = 3;
@@ -84,7 +86,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(44, 288);
+            label5.Location = new Point(44, 251);
             label5.Name = "label5";
             label5.Size = new Size(117, 20);
             label5.TabIndex = 4;
@@ -93,7 +95,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(44, 350);
+            label6.Location = new Point(44, 313);
             label6.Name = "label6";
             label6.Size = new Size(85, 20);
             label6.TabIndex = 5;
@@ -101,42 +103,42 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(244, 343);
+            dateTimePicker1.Location = new Point(244, 306);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 6;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(244, 281);
+            dateTimePicker2.Location = new Point(244, 244);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(250, 27);
             dateTimePicker2.TabIndex = 7;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(244, 222);
+            textBox1.Location = new Point(244, 40);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(250, 27);
             textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(244, 163);
+            textBox2.Location = new Point(244, 144);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(250, 27);
             textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(244, 99);
+            textBox3.Location = new Point(244, 88);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(250, 27);
             textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(244, 44);
+            textBox4.Location = new Point(244, 194);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(250, 27);
             textBox4.TabIndex = 11;
@@ -171,11 +173,29 @@
             button3.Text = "Cancel";
             button3.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker3
+            // 
+            dateTimePicker3.Location = new Point(244, 352);
+            dateTimePicker3.Name = "dateTimePicker3";
+            dateTimePicker3.Size = new Size(250, 27);
+            dateTimePicker3.TabIndex = 16;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(44, 359);
+            label7.Name = "label7";
+            label7.Size = new Size(97, 20);
+            label7.TabIndex = 15;
+            label7.Text = "Transfer Date";
+            // 
             // AddTransferOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dateTimePicker3);
+            Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -214,5 +234,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private DateTimePicker dateTimePicker3;
+        private Label label7;
     }
 }

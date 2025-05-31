@@ -58,6 +58,7 @@ namespace EF_Project
         }
         public DateTime ProdDate => dateTimePicker1.Value;
         public DateTime ExpDate => dateTimePicker2.Value;
+        public DateTime TransferDate => dateTimePicker3.Value;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -70,7 +71,8 @@ namespace EF_Project
                 WarehouseToID = DestinationWarehouseID,
                 SupplierID = SupplierID,
                 ProdDate = ProdDate,
-                ExpDate = ExpDate
+                ExpDate = ExpDate,
+                TransferDate = TransferDate
             };
             company.Transfer.Add(transferOrder);
             company.SaveChanges();
@@ -91,6 +93,7 @@ namespace EF_Project
                 found.SupplierID = SupplierID;
                 found.ProdDate = ProdDate;
                 found.ExpDate = ExpDate;
+                found.TransferDate = TransferDate;
                 company.SaveChanges();
                 MessageBox.Show("Transfer Order updated successfully.");
             }

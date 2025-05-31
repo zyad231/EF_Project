@@ -44,12 +44,14 @@
             label5 = new Label();
             label6 = new Label();
             button4 = new Button();
+            dataGridView2 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(505, 60);
+            button1.Location = new Point(468, 60);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -86,10 +88,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(859, 25);
+            dataGridView1.Location = new Point(605, 25);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(417, 450);
+            dataGridView1.Size = new Size(331, 450);
             dataGridView1.TabIndex = 5;
             // 
             // textBox2
@@ -120,7 +122,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(505, 156);
+            button2.Location = new Point(468, 156);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 6;
@@ -152,7 +154,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(263, 443);
+            button3.Location = new Point(258, 443);
             button3.Name = "button3";
             button3.Size = new Size(139, 29);
             button3.TabIndex = 13;
@@ -186,12 +188,23 @@
             button4.TabIndex = 16;
             button4.Text = "Show Warehouse";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(945, 25);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(331, 450);
+            dataGridView2.TabIndex = 17;
             // 
             // Reports
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1288, 487);
+            Controls.Add(dataGridView2);
             Controls.Add(button4);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -211,6 +224,7 @@
             Name = "Reports";
             Text = "Reports";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,5 +247,6 @@
         private Label label5;
         private Label label6;
         private Button button4;
+        private DataGridView dataGridView2;
     }
 }

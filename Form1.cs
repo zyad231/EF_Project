@@ -141,7 +141,8 @@ namespace EF_Project
                                             SourceWarehouseName = sourceWarehouse.Name,
                                             DestinationWarehouseName = destinationWarehouse.Name,
                                             transfer.ProdDate,
-                                            transfer.ExpDate
+                                            transfer.ExpDate,
+                                            transfer.TransferDate
                                         };
                     dataGridView1.DataSource = queryTransfer.ToList();
                     break;
