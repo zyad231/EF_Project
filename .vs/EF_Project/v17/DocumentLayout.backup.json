@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\zyada\\source\\repos\\EF_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\addwarehouses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addwarehouses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\adddeliveryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:adddeliveryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:additem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\adddeliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\adddeliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:adddeliveryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\addsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|c:\\users\\zyada\\source\\repos\\ef_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|C:\\Users\\zyada\\source\\repos\\EF_Project\\addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1821B3DB-8130-4ED8-A8A2-305D2086B500}|EF_Project.csproj|solutionrelative:addclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,105 +50,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddWarehouses.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddWarehouses.cs",
-              "RelativeDocumentMoniker": "AddWarehouses.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddWarehouses.cs",
-              "RelativeToolTip": "AddWarehouses.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAADUAAAArAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Reports.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Reports.cs",
+              "RelativeDocumentMoniker": "Reports.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Reports.cs*",
+              "RelativeToolTip": "Reports.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:58:21.799Z",
+              "WhenOpened": "2025-05-31T09:22:02.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Reports.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Reports.cs",
+              "RelativeDocumentMoniker": "Reports.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Reports.cs [Design]*",
+              "RelativeToolTip": "Reports.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:12:16.409Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:11:06.834Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddDeliveryItem.cs",
+              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddDeliveryItem.cs",
+              "RelativeDocumentMoniker": "AddDeliveryItem.cs",
+              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddDeliveryItem.cs",
+              "RelativeToolTip": "AddDeliveryItem.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T12:54:24.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AddClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddClient.cs",
               "RelativeDocumentMoniker": "AddClient.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddClient.cs [Design]",
               "RelativeToolTip": "AddClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:55:41.672Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-29T11:55:41.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AddSupplier.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddSupplier.cs",
               "RelativeDocumentMoniker": "AddSupplier.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddSupplier.cs",
               "RelativeToolTip": "AddSupplier.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAEAAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:53:20.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T11:53:20.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AddItem.cs [Design]",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddItem.cs",
               "RelativeDocumentMoniker": "AddItem.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddItem.cs [Design]",
               "RelativeToolTip": "AddItem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:49:39.979Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-29T11:49:39.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "AddClient.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddClient.cs",
               "RelativeDocumentMoniker": "AddClient.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddClient.cs",
               "RelativeToolTip": "AddClient.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACwAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:45:03.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T11:45:03.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AddDeliveryOrder.cs [Design]",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddDeliveryOrder.cs",
               "RelativeDocumentMoniker": "AddDeliveryOrder.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddDeliveryOrder.cs [Design]",
               "RelativeToolTip": "AddDeliveryOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T11:14:32.396Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-29T11:14:32.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddItem.cs",
-              "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddItem.cs",
-              "RelativeDocumentMoniker": "AddItem.cs",
-              "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\AddItem.cs",
-              "RelativeToolTip": "AddItem.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T06:39:44.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\zyada\\source\\repos\\EF_Project\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAiwKgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T17:10:12.557Z",
               "EditorCaption": ""

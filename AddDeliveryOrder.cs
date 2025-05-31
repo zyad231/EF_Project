@@ -16,5 +16,61 @@ namespace EF_Project
         {
             InitializeComponent();
         }
+        public int WarehouseID
+        {
+            get
+            {
+                if (int.TryParse(textBox2.Text, out int id))
+                    return id;
+                MessageBox.Show("Please enter a valid Warehouse ID.");
+                return -1; // Return an invalid ID if parsing fails
+            }
+        }
+        public int DeliveryOrderID
+        {
+            get
+            {
+                if (int.TryParse(textBox1.Text, out int id))
+                    return id;
+                MessageBox.Show("Please enter a valid Delivery Order ID.");
+                return -1; // Return an invalid ID if parsing fails
+            }
+        }
+        public int SupplierID
+        {
+            get
+            {
+                if (int.TryParse(textBox3.Text, out int id))
+                    return id;
+                MessageBox.Show("Please enter a valid Supplier ID.");
+                return -1; // Return an invalid ID if parsing fails
+            }
+        }
+        public DateTime DeliveryDate => dateTimePicker3.Value;
+
+        public DateTime ExpiryDate => dateTimePicker2.Value;
+
+        public DateTime ProductionDate => dateTimePicker1.Value;
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EF_Trading_Company company = new EF_Trading_Company();
+            var deliveryOrder = new DeliveryOrder
+            {
+                WarehouseID = WarehouseID,
+                SupplierID = SupplierID,
+                DeliveryDate = DeliveryDate,
+                ExpDate = ExpiryDate,
+                ProdDate = ProductionDate
+            };
+            company.DeliveryOrders.Add(deliveryOrder);
+            company.SaveChanges();
+            MessageBox.Show("Delivery Order added successfully.");
+            AddDeliveryOrder.ActiveForm.Close(); // Close the form after adding
+        }
     }
 }

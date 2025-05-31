@@ -27,6 +27,8 @@ namespace EF_Project
 
         public DateTime ExpDate { get; set; }
 
+        public DateTime TransferDate { get; set; }
+
         // Navigation properties to represent the relationships
         public virtual Warehouse WarehouseFrom { get; set; }
         public virtual Warehouse WarehouseTo { get; set; }

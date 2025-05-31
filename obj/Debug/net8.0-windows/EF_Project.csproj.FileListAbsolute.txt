@@ -147,3 +147,9 @@ C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddWa
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddClient.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddSupplier.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddDeliveryOrder.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddDeliveryItem.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddSellingOrder.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddSellingItem.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddTransferOrder.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddTransferItem.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.Reports.resources

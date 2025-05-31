@@ -31,6 +31,7 @@
             dataGridView1 = new DataGridView();
             comboBox1 = new ComboBox();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(177, 417);
+            button1.Location = new Point(47, 424);
             button1.Name = "button1";
             button1.Size = new Size(183, 29);
             button1.TabIndex = 2;
@@ -62,11 +63,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(335, 424);
+            button2.Name = "button2";
+            button2.Size = new Size(183, 29);
+            button2.TabIndex = 3;
+            button2.Text = "Show Report";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1265, 515);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(dataGridView1);
@@ -81,5 +93,6 @@
         private DataGridView dataGridView1;
         private ComboBox comboBox1;
         private Button button1;
+        private Button button2;
     }
 }
