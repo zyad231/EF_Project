@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
 
 namespace EF_Project
@@ -70,6 +71,16 @@ namespace EF_Project
                 Quantity = Quantity
             };
             company.TransferItems.Add(transfer_Items);
+            var inventoryItem = company.ItemUnits.FirstOrDefault(i => i.ItemID == ItemID && i.warehouseID == WarehouseID);
+            if (inventoryItem != null)
+            {
+                inventoryItem.Quantity += Quantity;
+            }
+            else
+            {
+                MessageBox.Show("Item not found in the specified warehouse.");
+                return; // Exit if item not found
+            }
             company.SaveChanges();
             MessageBox.Show("Transfer Item added successfully.");
             AddTransferItem.ActiveForm.Close(); // Close the form after adding

@@ -27,15 +27,60 @@ namespace EF_Project
             }
         }
 
-        public string SupplierName => textBox2.Text;
+        public string SupplierName 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox2.Text))
+                    return textBox2.Text;
+                MessageBox.Show("Please enter a valid Supplier Name.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string SupplierEmail => textBox3.Text;
+        public string SupplierEmail 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox3.Text))
+                    return textBox3.Text;
+                MessageBox.Show("Please enter a valid Supplier Email.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string SupplierPhone => textBox4.Text;
+        public string SupplierPhone 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox4.Text))
+                    return textBox4.Text;
+                MessageBox.Show("Please enter a valid Supplier Phone Number.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string SupplierWebsite => textBox5.Text;
+        public string SupplierWebsite 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox5.Text))
+                    return textBox5.Text;
+                MessageBox.Show("Please enter a valid Supplier Website.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string SupplierMobile => textBox6.Text;
+        public string SupplierMobile
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox6.Text))
+                    return textBox6.Text;
+                MessageBox.Show("Please enter a valid Supplier Mobile Number.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,7 +121,6 @@ namespace EF_Project
                 found.Mobile = SupplierMobile;
                 company.SaveChanges();
                 MessageBox.Show("Supplier updated successfully.");
-                AddSupplier.ActiveForm.Close(); // Close the form after updating
             }
         }
     }

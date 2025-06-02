@@ -27,11 +27,38 @@ namespace EF_Project
             }
         }
 
-        public string WarehouseName => textBox2.Text;
+        public string WarehouseName 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox2.Text))
+                    return textBox2.Text;
+                MessageBox.Show("Please enter a valid Warehouse Name.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string WarehouseAddress => textBox3.Text;
+        public string WarehouseAddress 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox3.Text))
+                    return textBox3.Text;
+                MessageBox.Show("Please enter a valid Warehouse Address.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
-        public string WarehouseManager => textBox4.Text;
+        public string WarehouseManager 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox4.Text))
+                    return textBox4.Text;
+                MessageBox.Show("Please enter a valid Warehouse Manager.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {

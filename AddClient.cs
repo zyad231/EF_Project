@@ -76,7 +76,6 @@ namespace EF_Project
                 found.Mobile = ClientMobile;
                 company.SaveChanges();
                 MessageBox.Show("Client updated successfully.");
-                AddClient.ActiveForm.Close(); // Close the form after updating
             }
         }
     }

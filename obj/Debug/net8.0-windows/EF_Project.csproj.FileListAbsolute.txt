@@ -153,3 +153,4 @@ C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddSe
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddTransferOrder.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddTransferItem.resources
 C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.Reports.resources
+C:\Users\zyada\source\repos\EF_Project\obj\Debug\net8.0-windows\EF_Project.AddItemUnit.resources

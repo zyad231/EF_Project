@@ -13,6 +13,9 @@
     <Compile Update="AddItem.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AddItemUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AddSellingItem.cs">
       <SubType>Form</SubType>
     </Compile>

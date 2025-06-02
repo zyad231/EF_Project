@@ -18,6 +18,8 @@ namespace EF_Project
         [MaxLength(50)]
         public string Unit { get; set; }
 
+        public int Quantity { get; set; }
+
         //Navigation property to represent the relationship with Item
         public virtual Item Item { get; set; }
 

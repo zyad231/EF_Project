@@ -69,6 +69,16 @@ namespace EF_Project
                 ItemID = ItemID,
                 Quantity = Quantity
             };
+            var inventoryItem = company.ItemUnits.FirstOrDefault(i => i.ItemID == ItemID && i.warehouseID == WarehouseID);
+            if (inventoryItem != null)
+            {
+                inventoryItem.Quantity -= Quantity;
+            }
+            else
+            {
+                MessageBox.Show("Item not found in the specified warehouse.");
+                return; // Exit if item not found
+            }
             company.SellingItems.Add(selling_Items);
             company.SaveChanges();
             MessageBox.Show("Selling Item added successfully.");

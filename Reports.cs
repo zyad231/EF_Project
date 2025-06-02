@@ -152,22 +152,68 @@ namespace EF_Project
                         };
             dataGridView1.DataSource = query.ToList();
             var query2 = from T in company.Transfer
-                    join Supplier in company.Suppliers on T.SupplierID equals Supplier.ID
-                    join Warehouse in company.Warehouses on T.WarehouseFromID equals Warehouse.ID
-                    where selectedWarehouses.Contains(T.WarehouseFromID) &&
-                    T.TransferDate >= dateTimePicker1.Value &&
-                    T.TransferDate <= dateTimePicker2.Value
-                    select new
-                    {
-                        T.ID,
-                        T.TransferDate,
-                        T.ExpDate,
-                        WarehouseName = Warehouse.Name,
-                        SupplierName = Supplier.Name
-                    };
+                         join Supplier in company.Suppliers on T.SupplierID equals Supplier.ID
+                         join Warehouse in company.Warehouses on T.WarehouseFromID equals Warehouse.ID
+                         where selectedWarehouses.Contains(T.WarehouseFromID) &&
+                         T.TransferDate >= dateTimePicker1.Value &&
+                         T.TransferDate <= dateTimePicker2.Value
+                         select new
+                         {
+                             T.ID,
+                             T.TransferDate,
+                             T.ExpDate,
+                             WarehouseName = Warehouse.Name,
+                             SupplierName = Supplier.Name
+                         };
             dataGridView2.DataSource = query2.ToList();
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            EF_Trading_Company company = new EF_Trading_Company();
+            var selectedWarehouses = checkedListBox1.CheckedItems.Cast<dynamic>().Select(item => item.Name).ToList();
+            if (selectedWarehouses.Count == 0)
+            {
+                MessageBox.Show("Please select at least one warehouse.");
+                return;
+            }
+            var query = from D in company.DeliveryOrders
+                        join DI in company.DeliveryItems on D.ID equals DI.DeliveryOrderID
+                        join item in company.Items on new { ItemID = DI.ItemID, WarehouseID = DI.WarehouseID } equals new { ItemID = item.ID, WarehouseID = item.WarehouseID }
+                        join W in company.Warehouses on item.WarehouseID equals W.ID
+                        where selectedWarehouses.Contains(item.Warehouse.Name) &&
+                        D.DeliveryDate >= dateTimePicker1.Value.ToUniversalTime() &&
+                        D.DeliveryDate <= dateTimePicker2.Value.ToUniversalTime()
+                        select new
+                        {
+                            D.ID,
+                            D.DeliveryDate,
+                            D.ExpDate,
+                            ITEMID = item.ID,
+                            item.Name,
+                            DI.Quantity,
+                            item.WarehouseID
+                        };
+            dataGridView1.DataSource = query.ToList();
+            var query2 = from S in company.SellingOrders
+                        join SI in company.SellingItems on S.ID equals SI.SellingOrderID
+                        join item in company.Items on new { ItemID = SI.ItemID, WarehouseID = SI.WarehouseID } equals new { ItemID = item.ID, WarehouseID = item.WarehouseID }
+                        join W in company.Warehouses on item.WarehouseID equals W.ID
+                         where selectedWarehouses.Contains(item.Warehouse.Name) &&
+                        S.OrderDate >= dateTimePicker1.Value.ToUniversalTime() &&
+                        S.OrderDate <= dateTimePicker2.Value.ToUniversalTime()
+                        select new
+                        {
+                            S.ID,
+                            Item_Name = item.Name,
+                            S.OrderDate,
+                            W.Name,
+                            SI.Quantity
+                            
+                        };
+            dataGridView2.DataSource = query2.ToList();
         }
     }
 }

@@ -72,5 +72,25 @@ namespace EF_Project
             MessageBox.Show("Delivery Order added successfully.");
             AddDeliveryOrder.ActiveForm.Close(); // Close the form after adding
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EF_Trading_Company company = new EF_Trading_Company();
+            var deliveryOrder = company.DeliveryOrders.FirstOrDefault(d => d.ID == DeliveryOrderID);
+            if (deliveryOrder != null)
+            {
+                deliveryOrder.WarehouseID = WarehouseID;
+                deliveryOrder.SupplierID = SupplierID;
+                deliveryOrder.DeliveryDate = DeliveryDate;
+                deliveryOrder.ExpDate = ExpiryDate;
+                deliveryOrder.ProdDate = ProductionDate;
+                company.SaveChanges();
+                MessageBox.Show("Delivery Order updated successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Delivery Order not found.");
+            }
+        }
     }
 }

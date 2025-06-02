@@ -39,7 +39,16 @@ namespace EF_Project
             }
         }
 
-        public string ItemName => textBox3.Text;
+        public string ItemName 
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(textBox3.Text))
+                    return textBox3.Text;
+                MessageBox.Show("Please enter a valid Item Name.");
+                return string.Empty; // Return an empty string if validation fails
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,7 +76,6 @@ namespace EF_Project
                 found.Name = ItemName;
                 company.SaveChanges();
                 MessageBox.Show("Item updated successfully.");
-                AddItem.ActiveForm.Close(); // Close the form after updating
             }
         }
 

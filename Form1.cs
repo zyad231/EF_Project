@@ -52,7 +52,8 @@ namespace EF_Project
                     {
                         w.ItemID,
                         w.warehouseID,
-                        w.Unit
+                        w.Unit,
+                        w.Quantity
 
                     }).ToList();
                     break;
@@ -267,6 +268,16 @@ namespace EF_Project
                         }
                         DisplayData("TransferItems"); // Refresh DataGridView
                         comboBox1.SelectedIndex = 10; // Reset ComboBox selection
+                    }
+                    break;
+                    case ("ItemUnits"):
+                    using (var form = new AddItemUnit())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                        }
+                        DisplayData("ItemUnits"); // Refresh DataGridView
+                        comboBox1.SelectedIndex = 2; // Reset ComboBox selection
                     }
                     break;
             }

@@ -68,6 +68,16 @@ namespace EF_Project
                 Quantity = Quantity
             };
             company.DeliveryItems.Add(deliveryItem);
+            var inventoryItem = company.ItemUnits.FirstOrDefault(i => i.ItemID == ItemID && i.warehouseID == WarehouseID);
+            if (inventoryItem != null)
+            {
+                inventoryItem.Quantity += Quantity;
+            }
+            else
+            {
+                MessageBox.Show("Item not found in the specified warehouse.");
+                return; // Exit if item not found
+            }
             company.SaveChanges();
             MessageBox.Show("Delivery Item added successfully.");
             AddDeliveryItem.ActiveForm.Close(); // Close the form after adding
